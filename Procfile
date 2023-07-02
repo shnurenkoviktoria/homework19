@@ -1,2 +1,2 @@
-web: gunicorn homework19.wsgi
+web: gunicorn webappexample.wsgi
 release: python manage.py migrate
