@@ -60,7 +60,6 @@
     <title>Homework</title>
 </head>
 <body>
-<form>
     {% if session %}
         <h1>Welcome, {{ session.userinfo.name }}!
             <div><h3>Or: {{ nickname }}</h3></div>
@@ -77,9 +76,8 @@
         <p><a href="{% url 'logout' %}" id="qsLogoutBtn" class="btn btn-success btn-lg btn-block">Logout</a></p>
 
     {% else %}
-        <h1 id="profileDropDown" class="display-4">Welcome, Guest</h1>
+        <h1 id="profileDropDown" class="display-4">Welcome</h1>
         <p><a href="{% url 'login' %}" id="qsLoginBtn" class="btn btn-outline-secondary btn-block">Login</a></p>
     {% endif %}
-</form>
 </body>
 </html>
